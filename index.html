@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Advent Calendar</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <title>Advent Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <main class="page-wrapper">
+        <div class="page">
+            <section class="calendar-section">
+                <img src="assets/images/Advent Calendar.jpg" usemap="#advent-map" class="calendar"
+                    alt="Advent Calendar" />
 
+                <map name="advent-map">
+                    <area shape="rect" coords="..." data-day="1" alt="Day 1" />
+                    <area shape="rect" coords="..." data-day="2" alt="Day 2" />
+                    <area shape="rect" coords="..." data-day="3" alt="Day 3" />
+                    <area shape="rect" coords="..." data-day="4" alt="Day 4" />
+                    <area shape="rect" coords="..." data-day="5" alt="Day 5" />
+                    <area shape="rect" coords="..." data-day="6" alt="Day 6" />
+                    <area shape="rect" coords="..." data-day="7" alt="Day 7" />
+                    <area shape="rect" coords="..." data-day="8" alt="Day 8" />
+                    <area shape="rect" coords="..." data-day="9" alt="Day 9" />
+                    <area shape="rect" coords="..." data-day="10" alt="Day 10" />
+                    <area shape="rect" coords="..." data-day="11" alt="Day 11" />
+                    <area shape="rect" coords="..." data-day="12" alt="Day 12" />
+                    <area shape="rect" coords="..." data-day="13" alt="Day 13" />
+                    <area shape="rect" coords="..." data-day="14" alt="Day 14" />
+                    <area shape="rect" coords="..." data-day="15" alt="Day 15" />
+                    <area shape="rect" coords="..." data-day="16" alt="Day 16" />
+                    <area shape="rect" coords="..." data-day="17" alt="Day 17" />
+                    <area shape="rect" coords="..." data-day="18" alt="Day 18" />
+                    <area shape="rect" coords="..." data-day="19" alt="Day 19" />
+                    <area shape="rect" coords="..." data-day="20" alt="Day 20" />
+                    <area shape="rect" coords="..." data-day="21" alt="Day 21" />
+                    <area shape="rect" coords="..." data-day="22" alt="Day 22" />
+                    <area shape="rect" coords="..." data-day="23" alt="Day 23" />
+                    <area shape="rect" coords="..." data-day="24" alt="Day 24" />
+                </map>
+            </section>
 
+            <aside class="info-section">
+                <h1>Christmas</h1>
+                <h2>Advent Calendar <br> <span class="subtext">with Warm Wishes</span></h2>
+                <p class="description">Click on a window in the calendar to receive a warm wish for the day. 🎄</p>
+            </aside>
+        </div>
+
+        <div class="modal" hidden>
+            <div class="modal__content">
+                <button class="modal__close">×</button>
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </main>
 </body>
-</html>
 
+</html>
