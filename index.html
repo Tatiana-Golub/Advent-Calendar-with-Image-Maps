@@ -35,15 +35,18 @@
                     <area shape="rect" coords="228,338,322,186" data-day="13" alt="Day 13" />
                     <area shape="rect" coords="941,185,1087,46" data-day="14" alt="Day 14" />
                     <area shape="rect" coords="340,50,468,202" data-day="15" alt="Day 15" />
-                    <area shape="rect" coords="340,50,468,202" data-day="16" alt="Day 16" />
+                    <area shape="rect" coords="31,40,172,113" data-day="16" alt="Day 16" />
                     <area shape="rect" coords="619,49,727,215" data-day="17" alt="Day 17" />
                     <area shape="rect" coords="554,579,398,717" data-day="18" alt="Day 18" />
                     <area shape="rect" coords="607,466,727,572" data-day="19" alt="Day 19" />
                     <area shape="rect" coords="563,295,678,402" data-day="20" alt="Day 20" />
                     <area shape="rect" coords="582,594,715,716" data-day="21" alt="Day 21" />
-                    <area shape="poly" coords="303,110,327,69,318,30,199,36,194,72,219,108,262,146" data-day="22" alt="Day 22" />
+                    <area shape="poly" coords="303,110,327,69,318,30,199,36,194,72,219,108,262,146" data-day="22"
+                        alt="Day 22" />
                     <area shape="rect" coords="971,244,1096,414" data-day="23" alt="Day 23" />
-                    <area shape="poly" coords="192,173,161,164,131,122,54,178,78,212,78,242,80,274,115,270,131,256,170,278,187,255,180,219,211,187,205,177" data-day="24" alt="Day 24" />
+                    <area shape="poly"
+                        coords="192,173,161,164,131,122,54,178,78,212,78,242,80,274,115,270,131,256,170,278,187,255,180,219,211,187,205,177"
+                        data-day="24" alt="Day 24" />
                 </map>
             </section>
 
@@ -54,13 +57,14 @@
             </aside>
         </div>
 
-        <div class="modal" hidden>
+        <dialog class="modal" id="wishModal">
             <div class="modal__content">
-                <button class="modal__close">×</button>
-                <h2></h2>
-                <p></p>
+                <button class="modal__close" aria-label="Close dialog">×</button>
+
+                <h2 class="modal__title"></h2>
+                <p class="modal__text"></p>
             </div>
-        </div>
+        </dialog>
 
         <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
         <script type="module" src="js/main.js"></script>

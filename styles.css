@@ -81,6 +81,10 @@ picture {
     max-width: 900px;
 }
 
+area {
+  cursor: pointer;
+}
+
 .info-section {
     display: flex;
     flex-direction: column;
@@ -116,6 +120,70 @@ h2 {
     font-size: 1.3rem;
     max-width: 300px;
 }
+
+.modal {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+  max-width: 420px;
+  width: 90%;
+  background: #e1f5dd;
+  animation: modal-scale-in 0.25s ease-out;
+}
+
+@keyframes modal-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+}
+
+.modal__content {
+  position: relative;
+  padding: 2.2rem 2.2rem;
+  text-align: center;
+  font-family: Inter, serif;
+  color: #2f3a2e;
+}
+
+.modal__content h2 {
+  font-family: Italianno, serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.modal__content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+
 
 @media (max-width: 970px) {
     .page {
