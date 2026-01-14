@@ -78,6 +78,8 @@ No build step or dependencies required.
 ## ❤️ Acknowledgements
 
 - The project is created to demonstrate the knowledge and skills acquired.
+- Design by Introvert duo (LifePixels JS), Figma Community (CC BY 4.0)
+- Design source: https://www.figma.com/community/file/1576897114990793513/interactive-advent-calendar-template
 - Image map resizing powered by  
   [`image-map-resizer`](https://github.com/davidjbradshaw/image-map-resizer)
 - Inspired by the tradition of Advent Calendars and Christmas warmth
